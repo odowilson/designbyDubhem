@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    background-color: #f7f7f7;
+    
+}
+
+.brandName{
+    margin: 1rem;
+}
+
+.brandName a {
+    font-family: 'Raleway', sans-serif;
+    margin: 2rem auto 0;
+    color: black;
+    text-decoration: none;
+}
+
+.navList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 16rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.navList li{
+    margin-top: 1rem;
+    color: black;
+}
+
+.navList li a{
+    color: black;
+}
+
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    background-color: black;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+}
+
+.starting{
+    padding: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.carsl{
+    padding: 2rem;
+    background-color: black;
+}
+
+.skills-tab{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 2rem 7rem;
+}
+
+.skills{
+    text-align: center;
+}
+
+.closing{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 4rem;
+}
+
+.last-div{
+    text-align: center;
+    padding: 5rem;
+}
+
+.works-carsl{
+
+}
+
+.work-btn{
+    width: 9rem;
+    height: 3rem;
+    border-radius: 40px;
+    padding-top: 9px;
+    
+}
+
+.contactme-div{
+    text-align: center;
+    background-color: white;
+}
+
+.contactme-div p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.icon-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem 5rem;
+
+}
+
+.icon-btn{
+    margin: 1rem;
+}
+
+.footer{
+    background-color: black;
+    padding: 4rem;
+    text-align: center;
+}
+
+.footer-notes{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.font-icons{
+    color: white;
+}
+
+.ft-icon{
+    margin: auto 0.6rem;
+}
+
+@media (min-width: 952px){
+
+    .navBar{
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        background-color: #f7f7f7;
+        
+    }
+
+    .brandName{
+        margin-left: 0px;
+    }
+    
+    .brandName a {
+        font-family: 'Raleway', sans-serif;
+        margin: 2rem auto 0 3rem;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .navList{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 25rem;
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        margin-left: auto;
+        margin-right: 4rem;
+        
+    }
+
+    .navList li{
+        margin-top: 1rem;
+        color: black;
+    }
+    
+    .navList li a{
+        color: black;
+    }
+
+    .starting{
+        padding: 7rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        line-height: 1.9;
+        text-align: center;
+    }
+    
+    h2{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+    }
+    
+    .carsl{
+        padding: 2rem;
+        background-color: black;
+    }
+
+    .skills-tab{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 2rem 7rem;
+        /* background-color: #f7f7f7; */
+    }
+
+    .skill{
+        margin: 1rem;
+        background-color: #f7f7f7;
+        padding: 2rem;
+    }
+
+    .font-icons{
+        color: white;
+    }
+
+    .ft-icon{
+        margin:0 38px ;
+    }
+
+    
+}
+
+/* for mobile and Tab */
+
+@media (max-width: 950px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .navBar{
+        overflow: hidden;
+    }
+
+    .navList li a {
+        color: black;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        
+    }
+
+    .burger{
+        display: block;
+        margin-left: auto;
+        margin-right: 8px;
+        transition: all 1s ease;
+        margin-top: 0.7rem;
+    }
+
+    .burger div{
+        background-color: black;
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        z-index: 1;
+    }
+    
+    .brandName{
+        margin-left: 1.7rem;
+    }
+
+    .navList{
+        position: absolute;
+        right: 0;
+        height: 80vh;
+        top: 8vh;
+        background-color: rgb(247, 246, 245);
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        text-decoration: none;
+        z-index: 1;
+    }
+
+    .navLinks{
+        opacity: 0;
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+    .skills-tab{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 2rem 2rem;
+        background-color: #f7f7f7;
+    }
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+    }
+    .skill{
+        text-align: center;
+        margin: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        /* background-color: white; */
+        padding: 20px;
+    }
+
+    .skills p{
+        font-family: 'Open Sans', sans-serif; 
+    }
+
+    .closing a {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        border-radius: 10px;
+        height: 2.6rem;
+        padding-top: 4px;
+    }
+
+    .font-icons{
+        margin-bottom: 20px;
+    }
+
+    .ft-icon{
+        margin: 0 1.8rem;
+    }
+
+    .footer-notes{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+        color: #f7f7f7;
+    }
+
+}
+
+@keyframes navListFade{
+    from{
+        opacity: 0;
+        transform: translateX();
+    }
+    to{
+        opacity: 1;
+        transform:translateX(0px)
+    }
+}
+
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-6px, 5px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-6px, -5px);
+}
