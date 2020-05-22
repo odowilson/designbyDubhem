@@ -273,6 +273,14 @@ h2{
     }
 
     .navList{
+       display: none;
+    }
+
+    .navLinks{
+        opacity: 0;
+    }
+
+    .nav-active{
         position: absolute;
         right: 0;
         height: 80vh;
@@ -283,18 +291,10 @@ h2{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        transform: translateX(100%);
+        transform: translateX(0%);
         transition: transform 0.5s ease-in;
         text-decoration: none;
         z-index: 1;
-    }
-
-    .navLinks{
-        opacity: 0;
-    }
-
-    .nav-active{
-        transform: translateX(0%);
     }
     .skills-tab{
         display: flex;
