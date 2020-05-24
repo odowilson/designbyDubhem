@@ -39,6 +39,14 @@
     color: black;
 }
 
+/* .navList li:hover{
+    background-color: black;
+} */
+
+.navList li a:hover{
+    color: rgb(173, 173, 173);
+}
+
 .navList li a{
     color: black;
 }
@@ -73,6 +81,16 @@ h2{
     background-color: black;
 }
 
+.space{
+    padding: 5rem auto;
+    background-color:black ;
+    margin: 0;
+}
+
+.space-text{
+    color: black;
+}
+
 .skills-tab{
     display: flex;
     justify-content: space-evenly;
@@ -97,7 +115,9 @@ h2{
 }
 
 .works-carsl{
-
+    background-color: black;
+    padding: 1.5rem;
+    margin: 0;
 }
 
 .work-btn{
@@ -121,7 +141,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 1rem 5rem;
+    padding: 1rem 20rem;
 
 }
 
@@ -230,7 +250,20 @@ h2{
     .ft-icon{
         margin:0 38px ;
     }
+    .carousel-item img {
+        max-height: 500px; /* input your desired height here */
+        max-width: 500px;
+        margin-left: 470px;
+    }
+    .carsl{
+        text-align: center;
+    }
 
+    .works-carsl{
+        background-color: black;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     
 }
 
@@ -319,6 +352,14 @@ h2{
 
     .skills p{
         font-family: 'Open Sans', sans-serif; 
+    }
+
+    .icon-btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0rem 3rem;
+    
     }
 
     .closing a {
